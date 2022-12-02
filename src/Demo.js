@@ -26,20 +26,23 @@ return(
 }
 export default Demo*/
 
-import ClassComponent3 from "./ClassComponent3";
-import FuncExample from "./FuncExample";
-import StateExample from "./StateExample";
+//import ClassComponent3 from "./ClassComponent3";
+import Events from "./Events";
+//import FuncExample from "./FuncExample";
+//import StateExample from "./StateExample";
 function Demo()
 {
 	return(
 		<div>
+		{/*
 		<p>good morning</p>
 		<ClassComponent3 name="siva kumar" rollno="203109"/>
 		<ClassComponent3 name="karthik" rollno="203114"/>
 		<ClassComponent3 name="rajesh" rollno="203116"/>
 		<ClassComponent3 name="trinath" rollno="203125"/>
 		<FuncExample name="functionExample"/>
-		<StateExample/>
+		<StateExample/> */}
+		<Events/>
 		</div>
 	)
 }
