@@ -27,9 +27,17 @@ return(
 export default Demo*/
 
 //import ClassComponent3 from "./ClassComponent3";
-import Events from "./Events";
+//import Events from "./Events";
 //import FuncExample from "./FuncExample";
 //import StateExample from "./StateExample";
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Home from "./Components/Home"
+import About from "./Components/About"
+import Contact from "./Components/Contact"
+import Navbar from "./Components/Navbar"
+import NotFound from "./Components/NotFound"
+
+
 function Demo()
 {
 	return(
@@ -41,9 +49,24 @@ function Demo()
 		<ClassComponent3 name="rajesh" rollno="203116"/>
 		<ClassComponent3 name="trinath" rollno="203125"/>
 		<FuncExample name="functionExample"/>
-		<StateExample/> */}
-		<Events/>
+		<StateExample/>
+		<Events/> */}
+		<BrowserRouter>
+		<Navbar/>
+			<Routes>
+				<Route path="/" element={<Home/>}>
+				</Route>
+				<Route path="/about" element={<About/>}>
+				</Route>
+				<Route path="/contact" element={<Contact/>}>
+				</Route>
+				<Route path="*" element={<NotFound/>}>
+				</Route>
+				
+			</Routes>
+		</BrowserRouter>
 		</div>
 	)
 }
 export default Demo
+
